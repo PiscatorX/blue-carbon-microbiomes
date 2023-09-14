@@ -152,8 +152,15 @@ qiime metadata tabulate \
 
 Exporting qiime data to R
  
-Data from qiime i.e. the *.qza artifacts can be imported directly into R, see for example, [qiime2R](https://github.com/jbisanz/qiime2R) Another option is to use ```qiime tools export``` to convert the artifacts into formats that can be used by other tools with other tools for downstream analysis e.g [phyloseq](https://joey711.github.io/phyloseq/) The for loop below can be used to export the four files that we need for any down stream analysis:
+Data from qiime i.e. the *.qza artifacts can be imported directly into R, see for example, [qiime2R](https://github.com/jbisanz/qiime2R) Another option is to use ```qiime tools export``` to convert the artifacts into formats that can be used by other tools for downstream analysis e.g [phyloseq](https://joey711.github.io/phyloseq/) The ```for loop``` below can be used to export the four files that we need for any down
+stream analysis outside of qiime:
 
+| # | filename | Description |
+|---|----------|-------------|
+| 1.| dna-sequences.fasta | Sequences of ASVs |
+| 2.| feature-table.tsv |  ASVs read abundance for samples |
+| 3.| taxonomy.tsv | ASV, taxonomy and confidence counts |
+| 4.| tree.nwk | ASV tree in newick format |		    
 
 ```
 mkdir ${output_dir}/qiime2R
