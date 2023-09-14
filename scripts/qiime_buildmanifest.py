@@ -8,7 +8,7 @@ import argparse
 
 def build_manifest(read_dir, spliton, manifest):
 
-    search_dir = os.path.join(args.read_dir,"*.f*q*")
+    search_dir = os.path.join(read_dir,"*.f*q*")
     read_files  =  list(map(os.path.abspath, sorted(glob.glob(search_dir))))
 
     if not read_files:raise Exception("No reads found check read directory path. Do the read extensions match the pattern '*.f*q*' ")
