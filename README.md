@@ -116,8 +116,6 @@ biom convert \
 
 ```
 
-#https://www.yanh.org/2021/01/01/microbiome-r/
-
 ## [phyloseq](https://www.bioconductor.org/packages/release/bioc/html/phyloseq.html) and [vegan]() analyis in R
 
 To analyse our data we will make use of the [vegan](https://github.com/vegandevs/vegan) and [phyloseq](https://www.bioconductor.org/packages/release/bioc/html/phyloseq.html) packages, the links provide the installation instructions. We will then import the exported data into R. See the [jupyter notebook](qiime2R/qiime2R.ipynb) for examples of analysis under phyloseq and vegan.
